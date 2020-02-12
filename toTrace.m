@@ -48,7 +48,9 @@ end
 
 if nargin < 6    
     % Just numbered labels
-    resources = 1:size(slots, 1);
+    for i=1:size(slots, 1)
+        resources{i} = sprintf("P%d",i);
+    end
 end
 %% Constraint check
  if length(resources)~=length(slots) %CONSTRAINT FOR THE CURRENT TRANSLATOR.
@@ -88,7 +90,7 @@ end
 %% Trace file: Resources' lines in .etf 
 for i=1:length(resources)
     %line=sprintf("R\t %1$d 100.0 unit 1 0 0 Processor_%1$d\n",i);
-    line=sprintf("R\t%d\t100.0\tunit\t1\t0\t%s\n",i-1,resources(i));
+    line=sprintf("R\t%d\t100.0\tunit\t1\t0\t%s\n",i-1,resources{i});
     fprintf(fid_trace,line);
 end
 fprintf(fid_trace,"\n");
