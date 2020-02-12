@@ -6,10 +6,10 @@ help toTrace
 configFileName='config.txt';
 fileName='traceMatlab.etf';
 coloring='unique';
-resources=["P1"
-        "P2"
-        "P3"
-        "P4"];
+resources={'P1',
+        'P2',
+        'P3',
+        'P4'};
 slots={[0 1 2 3 4 5 6 7],
        [1 2 3 4],
        [1 2 3 4],
