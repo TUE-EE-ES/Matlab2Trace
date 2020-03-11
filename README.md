@@ -16,3 +16,7 @@ This will generate three files: `traceMatlab.etf`, `traceMatlab2.etf` and `confi
 3.	Copy the files `traceMatlab.etf`, `traceMatlab2.etf` and `config.txt` to the TRACE workspace directory you have created during Trace installation.
 4.	Open the `\*.etf` files in ESI TRACE viewer.
 
+# Contact
+[Sajid Mohamed](mailto:s.mohamed@tue.nl)
+
+This repository was initially hosted [here](https://github.com/sajid-mohamed/Matlab2Trace).
